@@ -29,7 +29,7 @@ function gameStart() {
     playerPlay(finalChoice);
 }
 
-function playerPlay(playerChoice){
+function playerPlay(playerChoice){                          //player choice
 
     switch(playerChoice) {
         case 'rock':
@@ -54,7 +54,7 @@ function playerPlay(playerChoice){
     }
 }
 
-function choiceToNumber(choice){
+function choiceToNumber(choice){              //converts choice to number
     
     switch(choice) {
         case 'rock':
@@ -69,7 +69,7 @@ function choiceToNumber(choice){
     }
 }
 
-function resultFinal()
+function resultFinal()                      //Round Result
 {
     switch(result){
         case 1:
@@ -84,7 +84,7 @@ function resultFinal()
     }
 }
 
-function playRound(playerSelection,computerSelection) {
+function playRound(playerSelection,computerSelection) {         //Round Evaluation
     console.log(playerSelection);
     console.log(computerSelection);
 
