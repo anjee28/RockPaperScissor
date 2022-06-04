@@ -1,0 +1,20 @@
+body {
+    background: fixed;
+    background-image: linear-gradient(45deg, #20639b, #3caea3);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    margin: 0;
+}
+
+.containerMain{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 720px;
+    color:#f6d55c;
+    padding: 35px, 50px, 35px, 50px;
+    top: 0;
+    left: 0;
+}

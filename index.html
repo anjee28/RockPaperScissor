@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="./scripts/rps-ui.js"></script>
+    <link rel="stylesheet" href="./styles/containerMain.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/scoreContainer.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
 </head>
 <body>
-    <script src="./scripts/script.js"></script>
+    <div class="containerMain">
+
+        <div class="header">
+            <p>ROCK PAPER SCISSORS</p>
+        </div>
+
+        <div class="content">
+            <div class="won">
+                <p id="won"></p>        
+            </div>            
+            <div class="roundContainer">
+                <div class="selected player" >
+                    <p id="playerSelection"></p>
+                    <p></p>
+                </div>
+                <div class="selected vs">V.S.</div>
+                <div class="selected computer">
+                    <p id="computerSelection"></p>
+                    <p></p>
+                </div>                    
+            </div>
+        </div>
+        
+        <div class="scoreContainer">
+            <p id="result" class="result">GAME START!</p>
+            <p class="scoreHead">SCORE</p>            
+            <div class="scoreContainerChild">
+                <div class="score">
+                    <div><p>Player:</p></div>
+                    <div><p id="playerScore">0</p></div>
+                </div>
+                <div class="score">
+                    <div><p>Computer:</p></div>
+                    <div><p id="computerScore">0</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="selection">
+                <p>Choose:</p>
+            </div>
+
+            <div class="btnSelection">
+                <button class="btn" id="rock">Rock</button>
+                <button class="btn" id="paper">Paper</button>
+                <button class="btn" id="scissors">Scissors</button>
+            </div>
+
+            <div class="reset">
+                <button class="btnReset" id="btnReset" onclick="reset()">Play Again</button>
+            </div>
+
+        </div>    
+    </div>
 </body>
 </html>

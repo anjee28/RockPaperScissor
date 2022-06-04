@@ -1,0 +1,39 @@
+.scoreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.scoreContainer p {
+    margin: 8px;
+}
+
+.scoreHead {
+    margin-bottom: 10px;
+}
+
+.scoreHead p{
+    border: 0;
+    margin: 0;
+}
+
+.scoreContainerChild {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: 0;
+}
+
+.scoreContainerChild p{
+    border: 0;
+    margin: 0;
+}
+
+.score{
+    text-align: center;
+    width: 40%;
+}
+

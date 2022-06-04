@@ -3,7 +3,6 @@ let computerSelection = "";
 let playerSelection = "";
 let result = "";                                        //1 win, 0 tie, -1 lose
 
-
 function computerPlay() {                               //Function for Bot Play
 
     let botPlay = Math.floor(Math.random() * 3) + 1;    //Gives random number from 1-3
@@ -108,7 +107,7 @@ function playRound(playerSelection,computerSelection) {         //Round Evaluati
     resultFinal();
 }
 
-function gameIntro() {
+/* function gameIntro() {
     alert("You will be playing 5 rounds of Rock, Paper, Scissors");
     
     let playerScore = 0;
@@ -118,5 +117,7 @@ function gameIntro() {
         gameStart();
     }
 }
+*/
 
-gameIntro();
+const rock = document.getElementById('rock');
+rock.addEventListener("click", gameStart);
